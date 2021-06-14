@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Edit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Edit</h1>
+  <!-- sending a post request but method override will trick it into using a PATCH request -->
+  <form method="POST" action="/comments/<%= comment.id %>?_method=PATCH">
+  <textarea name="comment" id="" cols="30" rows="10"> <%= comment.comment %> </textarea>
+  <button>Save</button>
+</form>
+</body>
+</html>
