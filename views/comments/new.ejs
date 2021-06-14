@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Comment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <h1>Make a new comment</h1>
+      <!-- this is the action so that the submitted comment will post to /comments -->
+      <form action="/comments" method="post">
+        <section>
+          <label for="username">Enter username:</label>
+          <!-- label for="username" and input id-"username" will connect so the label focuses on the input field -->
+          <input type="text" id="username" placeholder="username" name="username">
+        </section>
+        <section>
+          <!-- label for="comment" and id="comment link the label to the text area"  -->
+          <label for="comment">Comment Text</label>
+          <!-- lazy br instead of linking to a css file -->
+          <br>
+          <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </section>
+        <button>Submit</button>
+      </form>
+      <a href="/comments">Back to Index</a>
+  </body>
+</html>
