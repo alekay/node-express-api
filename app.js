@@ -36,7 +36,7 @@ const comments = [
 
 // get comments path, refer to index.ejs file via index argument, render comments with {comments}
 app.get('/comments', (req, res) => {
-    res.render('index', {comments})
+    res.render('comments/index', {comments})
 })
 
 app.get('/tacos', (req, res) => {
