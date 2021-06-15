@@ -102,7 +102,6 @@ app.delete('/comments/:id', (req, res) => {
 app.listen(3000, () => {
   console.log("on port 3000")
 }) 
-
 // GET /comments - list all comments
 // POST /comments - Create a new comment 
 // GET /comments/:id - Get one comment (using ID)
