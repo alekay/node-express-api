@@ -100,9 +100,4 @@ app.delete('/comments/:id', (req, res) => {
 // serve up the app on port 3000 - in terminal (in app directory) run -> nodemon app.js
 app.listen(3000, () => {
   console.log("on port 3000")
-}) 
-// GET /comments - list all comments
-// POST /comments - Create a new comment 
-// GET /comments/:id - Get one comment (using ID)
-// PATCH /comments/:id - Update one comment
-// DELETE /comments/:id - Destroy one comment
+})
