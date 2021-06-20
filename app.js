@@ -97,6 +97,11 @@ app.delete('/comments/:id', (req, res) => {
   res.redirect('/comments')
 })
 
+// Name: Index, Path: /pictures, Verb: GET display all photos 
+app.get('/pictures-index', (req, res) => {
+  res.render('pictures/index')
+})
+
 // serve up the app on port 3000 - in terminal (in app directory) run -> nodemon app.js
 app.listen(3000, () => {
   console.log("on port 3000")
