@@ -97,9 +97,17 @@ app.delete('/comments/:id', (req, res) => {
   res.redirect('/comments')
 })
 
+// this will be an array for storing objects with pictures
+// let pictures = [
+//   {
+//       id: uuid(),
+//       username: "Sally",
+//       picture: src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg"
+//   }
+// ]
 // Name: Index, Path: /pictures, Verb: GET display all photos 
 app.get('/pictures-index', (req, res) => {
-  res.render('pictures/index')
+  res.render('pictures/index'  /* grab picture from array with: { pictures } */)
 })
 
 // serve up the app on port 3000 - in terminal (in app directory) run -> nodemon app.js
