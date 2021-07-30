@@ -106,7 +106,7 @@ app.delete('/comments/:id', (req, res) => {
 //   }
 // ]
 // Name: Index, Path: /pictures, Verb: GET display all photos 
-app.get('/pictures-index', (req, res) => {
+app.get('/pictures', (req, res) => {
   res.render('pictures/index'  /* grab picture from array with: { pictures } */)
 })
 
